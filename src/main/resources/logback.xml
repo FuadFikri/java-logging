@@ -1,4 +1,7 @@
 <configuration>
+
+    <logger name="com.fikri.contoh" level="trace"/>
+
     <root level="warn">
         <appender class="ch.qos.logback.core.ConsoleAppender">
             <encoder>
