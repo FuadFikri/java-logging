@@ -33,3 +33,22 @@
   </root>
 </configuration>
 ```
+
+
+### Appender
+- destinasi log file yang akan dibuat
+- Logback sudah menyediakan banyak sekali appender, jadi sebenarnya kita tidak perlu membuat appender secara manual
+
+#### Console Appender
+- Appender yang paling sederhana adalah Console
+- appender ini hanya meneruskan log event yang kita kirim menggunakan logger ke dalam console atau System.out
+- ConsoleAppender sangat cocok ketika aplikasi yang kita buat di bungkus dalam docker atau kubernetes misalnya,
+karena kita cukup menampilkannya di console, dan secara otomatis log bisa diambil oleh docker dan kubernetes
+
+
+#### File Appender
+- FileAppender merupakan appender yang mengirim log event ke file
+- FileAppender sangat cocok ketika kita masih menggunakan VM untuk deploy aplikasi  kita
+- Jadi semua log event akan disimpan di file
+
+
