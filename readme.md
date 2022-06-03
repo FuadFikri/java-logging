@@ -51,4 +51,9 @@ karena kita cukup menampilkannya di console, dan secara otomatis log bisa diambi
 - FileAppender sangat cocok ketika kita masih menggunakan VM untuk deploy aplikasi  kita
 - Jadi semua log event akan disimpan di file
 
+#### Rolling File Appender
+- saat menyimpan semua log event di file, lama-lama file tersebut akan terlalu besar
+- appender yang menyimpan data nya di file, namun kita bisa lakukan rolling, artinya per waktu tertentu akan dibuatkan file baru
+- Selain itu kita bisa juga set maksimal ukuran file nya, sehingga ketika sudah mencapai batas maksimal, akan dibuatkan file baru lagi
+- Ini lebih direkomendasikan untuk digunakan dibanding menggunakan FileAppender
 
